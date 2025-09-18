@@ -1,0 +1,11 @@
+Composer makes PHP projects modular and easy to manage.
+
+Always define autoloading in composer.json → saves you from messy require calls.
+
+Run composer dump-autoload after changes in autoload config.
+
+Use Composer scripts for shortcuts to your CLI commands.
+
+"type": "project" is for apps, "library" is for reusable packages.
+
+"license": "MIT" is a safe default for learning/demo projects.
