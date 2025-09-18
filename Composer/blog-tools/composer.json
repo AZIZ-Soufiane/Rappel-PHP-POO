@@ -1,0 +1,26 @@
+{
+    "name": "solicode/cli-tools",
+    "description": "Scripts CLI pour le fil rouge (seed JSON)",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AZIZ-Soufiane",
+            "email": "AZIZ.Soufiane.Solicode@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php cli/app.php",
+        "seed": "php cli/seed_articles.php --count=10 --out=storage/articles.seed.json",
+        "clean": "php -r \"@unlink('storage/articles.seed.json'); echo 'OK\\n';\""
+    }
+}
