@@ -1,0 +1,13 @@
+{
+    "name": "yourname/c3-php",
+    "description": "CLI tool for reporting articles",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "license": "MIT"
+}
